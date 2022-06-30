@@ -1,0 +1,130 @@
+.styles {
+  background-image: url("https://wallpapercave.com/wp/wp2763894.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: auto;
+}
+
+.app {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"]
+{
+  height: 20px;
+  border: 0px;
+  background: #e2f2ff;
+  padding: 12px;
+  border-radius: 8px;
+  outline: none !important;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button 
+{ 
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.formdata {
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h3 {
+  text-align: left;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.captcha {
+  text-align: center;
+}
+
+button {
+  height: 40px;
+  cursor: pointer;
+  font-size: 22px;
+  border: 0px;
+  background-color: darkblue;
+  color: white;
+  border-radius: 8px;
+  width: 32vw;
+  margin: 18px;
+  outline: none;
+}
+
+button:hover {
+  background: rgb(14, 13, 13);
+}
+
+button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.7);
+}
+
+.button-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.registration-form {
+  background: #8da5ed;
+  padding: 32px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 55vh;
+  margin-top: 200px;
+  font-weight: 500;
+  border-radius: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: azure;
+  text-shadow: 2px 2px 2px rgb(30, 85, 119);
+  margin-top: 35px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 600px),
+  (min-device-width: 600px) and (max-device-width: 1024px) {
+  .registration-form {
+    width: auto;
+    margin: 10px auto;
+    overflow-y: auto;
+    height: 70%;
+  }
+  .title {
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
